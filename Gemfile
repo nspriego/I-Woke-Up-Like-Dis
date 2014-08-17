@@ -27,3 +27,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'foundation-rails'
+
+gem 'monban'
+gem	'monban-generators'
