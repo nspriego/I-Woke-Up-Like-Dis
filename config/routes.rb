@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resource :newsfeed, only: [:show]
   resource :session, only: [:new, :create, :destroy]
   resources :users, only: [:new, :create]
+  resources :posts, only: [:create]
 end
