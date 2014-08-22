@@ -1,7 +1,10 @@
 <h2>Welcome <%= current_user.username %>, here is your newsfeed</h2>
+<div>
+	<%= form_for @post do |form| %>
+		<%= form.text_field :body, placeholder: '#IWokeUpLikeDis' %>
+		<%= form.file_field :image %>
+		<%= form.submit %>
+	<% end %>
+</div>
 
-<%= form_for @post do |form| %>
-	<%= form.text_field :body, placeholder: '#IWokeUpLikeDis' %>
-	<%= form.file_field :image %>
-	<%= form.submit %>
-<% end %>
+<%= render @posts %>
