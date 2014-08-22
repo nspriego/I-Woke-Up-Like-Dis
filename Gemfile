@@ -30,3 +30,5 @@ gem 'foundation-rails'
 
 gem 'monban'
 gem	'monban-generators'
+
+gem 'paperclip'
